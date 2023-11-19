@@ -1,0 +1,25 @@
+fun main() {
+    
+    //Creating a set
+    val solarSystem = mutableSetOf("Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune")
+	
+    println(solarSystem.size)
+    
+    //Adding an element into the set
+    solarSystem.add("Pluto")
+    
+    println(solarSystem.size)
+    
+    //Check if set contains "Pluto"
+    println(solarSystem.contains("Pluto"))
+    
+    //Attempting to add a duplicate into a set
+    solarSystem.add("Pluto")
+    
+    print(solarSystem.size)
+    println(" - Set size did not increase because \"Pluto\" already exist in Set")
+    
+    solarSystem.remove("Pluto")
+    println(solarSystem.size)
+    println(solarSystem.contains("Pluto"))
+}
