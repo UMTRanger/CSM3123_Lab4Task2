@@ -1,0 +1,23 @@
+fun main() {
+    val solarSystem = mutableListOf("Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune")
+	
+    //Updating the list
+    solarSystem.add("Pluto")
+    solarSystem.add(3,"Theia")
+    solarSystem [3] = "Future Moon"
+    
+    //Removing elements from a list
+    solarSystem.removeAt(9)
+    solarSystem.remove("Future Moon")
+    
+    //contains() function
+    println(solarSystem.contains("Pluto"))
+    
+    //Check if certain element is in the list
+    println("Future Moon" in solarSystem)
+    
+    //Displaying the list using a for loop
+    for (planet in solarSystem){
+        println(planet)
+    }
+}
